@@ -31,18 +31,26 @@ echo ""
 sudo snap install code --classic
 
 echo ""
-echo "Installing Code Blocks"
+echo "Installing Discord"
 echo ""
-flatpak install flathub org.codeblocks.codeblocks -y
+sudo snap install discord
+#flatpak install flathub org.codeblocks.codeblocks -y
 echo ""
-echo "Installing AnyDesk"
+echo "Installing VLC"
 echo ""
-flatpak install flathub com.anydesk.Anydesk -y
+sudo snap install vlc
+#flatpak install flathub com.anydesk.Anydesk -y
 echo ""
-echo "Installing PulseEffects"
+echo "Installing OBS"
 echo ""
-flatpak install --user https://flathub.org/repo/appstream/com.github.wwmm.pulseeffects.flatpakref -y
-flatpak --user update com.github.wwmm.pulseeffects -y
+sudo snap install obs-studio
+echo ""
+echo "Installing Handbrake"
+echo ""
+sudo snap install handbrake-jz
+
+#flatpak install --user https://flathub.org/repo/appstream/com.github.wwmm.pulseeffects.flatpakref -y
+#flatpak --user update com.github.wwmm.pulseeffects -y
 
 flatpak update
 
