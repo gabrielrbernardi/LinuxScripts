@@ -5,10 +5,12 @@ sudo add-apt-repository ppa:ondrej/php -y &&
 sudo apt install apache2 php7.4 php7.4-fpm -y && 
 sudo apt-get install php7.4-mysql php7.4-pdo php7.4-pgsql php7.4-curl -y &&
 # sudo service php7.4-fpm start &&
+sudo systemctl enable php7.4-fpm &&
 sudo systemctl start php7.4-fpm &&
 sudo a2enmod proxy_fcgi proxy && 
 sudo apt install libpq-dev -y &&
 # sudo service apache2 start &&
+sudo systemctl enable apache2 &&
 sudo systemctl start apache2 &&
 
 #Updating configs of apache2
